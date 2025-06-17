@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 
 const CoreBusinessSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
+    <section className="py-12 lg:py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Animated Characters and Elements */}
           <motion.div
             className="relative h-96 mb-16"
@@ -139,16 +139,19 @@ const CoreBusinessSection = () => {
 
           {/* Main heading */}
           <motion.div
-            className="text-center mb-20"
+            className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-[0.9] tracking-tight">
-              <span className="text-gray-900">The </span><span className="text-purple-500">core</span><span className="text-gray-900"> of your</span>
-              <br />
-              <span className="text-blue-500">project business.</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight px-4">
+              <div className="mb-2">
+                <span className="text-gray-900">The </span>
+                <span className="text-purple-500">core</span>
+                <span className="text-gray-900"> of your</span>
+              </div>
+              <div className="text-blue-500">project business.</div>
             </h2>
           </motion.div>
 

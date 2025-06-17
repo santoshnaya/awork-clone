@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const ProjectManagementSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden">
+    <section className="py-12 lg:py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -left-24 w-96 h-96 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full opacity-10 blur-3xl"></div>
@@ -13,20 +13,20 @@ const ProjectManagementSection = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Header */}
           <motion.div
-            className="text-center mb-20"
+            className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-[0.9] tracking-tight">
-              <span className="text-gray-900 block">More than just</span>
-              <span className="text-blue-500 block">Project management.</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight px-4">
+              <div className="text-gray-900 mb-2">More than just</div>
+              <div className="text-blue-500">Project management.</div>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6 px-4">
               Keep an eye on all <span className="text-purple-500 font-semibold">projects</span> and{' '}
               <span className="text-purple-500 font-semibold">deadlines</span>.
             </p>
@@ -58,7 +58,7 @@ const ProjectManagementSection = () => {
             </button>
 
             {/* Dashboard mockup */}
-            <div className="bg-white rounded-3xl shadow-2xl mx-auto max-w-6xl overflow-hidden border border-gray-200/50">
+            <div className="bg-white rounded-xl shadow-xl mx-auto max-w-4xl overflow-hidden border border-gray-200/50">
               {/* Dashboard header */}
               <div className="bg-gray-50 px-6 py-4 border-b border-gray-200/50">
                 <div className="flex items-center justify-between">

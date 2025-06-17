@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 
 const HeroSection = () => {
   return (
-    <section className="pt-20 lg:pt-32 pb-16 lg:pb-24 bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 relative overflow-hidden">
+    <section className="pt-20 lg:pt-28 pb-12 lg:pb-20 bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full opacity-20 blur-3xl"></div>
@@ -32,30 +32,31 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Main Hero Content */}
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <motion.h1
-            className="text-5xl sm:text-6xl lg:text-8xl font-bold leading-[0.9] mb-12 tracking-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-16 px-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-gray-900 block">Organise</span>
-            <span className="text-blue-500 inline">your</span>{' '}
-            <span className="text-gray-900 inline">project</span>
-            <br />
-            <span className="text-gray-900 block">business</span>
-            <span className="text-purple-500 block">efficiently.</span>
+            <div className="text-gray-900 mb-2">Organise</div>
+            <div className="mb-2">
+              <span className="text-blue-500">your</span>{' '}
+              <span className="text-gray-900">project</span>
+            </div>
+            <div className="text-gray-900 mb-2">business</div>
+            <div className="text-purple-500">efficiently.</div>
           </motion.h1>
 
           {/* Hero Image/Mockup */}
           <motion.div
-            className="relative mt-12 mb-16"
+            className="relative mt-8 mb-16 px-4"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
             {/* Main dashboard mockup */}
-            <div className="bg-white rounded-2xl shadow-2xl mx-auto max-w-4xl overflow-hidden border border-gray-200/50">
+            <div className="bg-white rounded-xl shadow-xl mx-auto max-w-3xl overflow-hidden border border-gray-200/50">
               {/* Dashboard header */}
               <div className="bg-gray-50 px-6 py-4 border-b border-gray-200/50">
                 <div className="flex items-center justify-between">

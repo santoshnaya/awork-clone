@@ -30,9 +30,9 @@ const FeaturesSection = () => {
   ]
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 relative overflow-hidden">
+    <section className="py-12 lg:py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           {/* Section Header */}
           <motion.div
             className="text-center mb-16"
@@ -42,7 +42,7 @@ const FeaturesSection = () => {
             viewport={{ once: true }}
           >
             <p className="text-lg text-gray-600 mb-4">Lisa</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Project Management
             </h2>
           </motion.div>
